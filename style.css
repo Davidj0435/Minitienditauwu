@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+body {
+	
+    background-color: lightblue;
+  }
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+h2{	
+	
+	margin: 0;
+    font-size: 50px;
+    line-height: 54px;
+    color: black;
+}
+h4{
+	margin: 0;
+    font-size: 20px;
+    color: black;
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+}
+p{
+    font-size: 16px;
+    color: black;
+    margin: 15px 020px 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background:darkgrey;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+#header img div ul li a{
+	font-size: 120px;
+}
+#header img{
+
+	height: auto;
+
+	max-width: 12%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style:none ;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:brown;
+    transition:  0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a:active{
+    color:aqua
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+#hero{
+    background-image: url(imagenes/background_forest_2.png);
+    height: 150vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px 50px;
+
+    background-repeat: no-repeat ;
+    padding: 80px 50px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4)
+
+}
+
+#hero h4{
+    padding-bottom: 10px;
+}
+#hero h1{
+    color: burlywood;
+}
+#hero button{
+    font-size: large;
+    font-weight: bold;
+    background-image: url(imagenes/eco-green-color-leaf-vector.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    
+    background-position: 90px 12px;
+    background-size: 25%;
+    color: black;
+    
+    border: 0;
+    padding: 15px 70px 50px 20px;
+}
+
+
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+#features .product_box img{
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+    height: auto;
+
+}
+#features .product_box {
+    width: 200px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0,0,0.1);
+    border: 1px solid rgba(78, 68, 68, 0.634);
+    border-radius: 8px;
+}
+
+
+#features .product_box:hover {
+    box-shadow: 10px 10px 54px rgba(0, 0,0,0.2);
+}
+#features .product_box h6 {
+    display: inline-block;
+    padding: 8px 8px 10px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(9, 9, 10);
+    background-color: rgb(81, 129, 81);
+
+}
+
+#product1{
+	text-align: center;
+}
+#product1 .pro-contaier{
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 20px ;
+	flex-wrap: wrap;
+}
+
+#product1 .pro{
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px solid #545c55;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+	margin: 55px 0;
+	transition: 0.2s ease;
+	position: relative;
+}
+#product1 .pro:hover{
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#product1 .pro img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+#product1 .pro .descripcion{
+	text-align: start;
+	padding: 10px 0;
+}
+#product1 .pro .descripcion span{
+	color: #606063;
+	font-size: 12px;
+}
+#product1 .pro .descripcion h5{
+	padding-top: 7px;
+	color: #1a1a1a;
+	font-size: 14px;
+}
+#product1 .pro .descripcion h4{
+	color: #076c1d;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#product1 .pro .cart{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50px;
+	background-color: #8a93449e;
+	font-weight: 500;
+	color: #076c1d;
+	border-color: 1px solid rgba(0,0,0,0.1);
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+}
+
+
+#page_header{
+	background-image: url(imagenes/background_forest_6.png);
+	background-repeat: no-repeat ;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+	background-size: cover;
+	height: auto;
+	min-height: max-content;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	
+}
+
+#page_header h2,
+#page_header p{
+	color:rgb(19, 105, 11);
+}
+#page_header p{
+	color:rgb(19, 105, 11);
+	margin-bottom: 100px;
+}
+footer{
+	background-color: #032d0c;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .Logo {
+	margin-bottom: 30px ; 
+	
+}
+footer img{
+	height: auto;
+	max-width: 200px;
+}
+
+footer .follow{
+	margin-top: 20px;
+	position: relative;
+	left: 600px;
+	bottom:  100px;
+
+}
+
+footer .follow i{
+	color: #659210;
+	font-size: larger;
+	padding-left: 25px;
+} 
+
+footer .follow i:hover{
+	color: #a8aa0e;
+	cursor: pointer;
+}
+
+#paginacion{
+	text-align: center;
+	justify-content: space-evenly;
+}
+#paginacion a{
+	text-decoration: none;
+	background-color: #096e1f;
+	padding: 15px 20px;
+	border-radius: 4px;
+	color: lightblue;
+	font-weight: 600;
+	margin: 5px;
+
+}
+
+#pro_detalles{
+	display: flex;
+	margin-top: 20px;
+}
+#pro_detalles .pro_detalles_texto{
+	width: 50%;
+	padding-top: 10px;
+}
+#pro_detalles .pro_detalles_texto h4{
+	padding: 10px 0 10px 0;
+}
+#pro_detalles .pro_detalles_texto h2{
+	font-size: 46px;
+}
+
+#pro_detalles .pro_detalles_texto select{
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+#pro_detalles .pro_detalles_texto input{
+	width: 50px;
+	height: 47px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+#pro_detalles .pro_detalles_texto button {
+	background: #076c1d;
+	color: #a8aa0e;
+	border-radius: 10px;
+	padding: 10px;
+}
+#pro_detalles .pro_detalles_texto span{
+	line-height: 25px;
+}
+
+#pro_detalles .pro_image{
+	width: 40%;
+	margin-right: 50px;
+
+}
+#pro_detalles .pro_image img{
+	border-radius: 15px;
+}
+.image_group{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+.images_peque{
+	flex-basis: 24% ;
+	cursor: pointer;
+	
+}
